@@ -1,0 +1,19 @@
+<div> - Usado para criar uma divisão ou seção em um documento HTML.
+
+<p> - Define um parágrafo de texto.
+
+<a> - Cria um link para outra página.
+
+<img> - Insere uma imagem em um documento HTML.
+
+<ul> - Define uma lista não ordenada.
+
+<li> - Define um item em uma lista.
+
+<input> - Cria um campo de entrada, como um campo de texto ou botão.
+
+<h1> a <h6> - Define os cabeçalhos de um documento, sendo <h1> o mais importante e <h6> o menos importante.
+
+<strong> - Usado para enfatizar ou destacar um texto, geralmente exibindo-o em negrito.
+
+<table> - Define uma tabela para exibir dados tabulares.

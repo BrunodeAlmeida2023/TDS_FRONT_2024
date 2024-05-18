@@ -1,0 +1,65 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.head{
+    background-color: black;
+    height: 18vh;
+}
+
+.nav-bar{
+    display: flex;
+    justify-content: space-around;
+    padding: 7vh;
+    font-size: 3vh;
+}
+
+.one{
+    text-decoration: none;
+    color: white;
+}
+
+.two{
+    text-decoration: none;
+    color: white;
+}
+
+.three{
+    text-decoration: none;
+    color: white;
+}
+
+.four{
+    text-decoration: none;
+    color: white;
+}
+
+.main{
+    background-color: steelblue;
+    height: 100vh;
+}
+
+.div-one{ 
+    text-align: center;
+    padding: 40vh;
+}
+
+.logo{
+    background-color: black;
+}
+
+.feet{
+    background-color: black;
+    height: 18vh;
+}
+
+.div-two{
+    color: white;
+    font-family: serif;
+    font-size: 2vh;
+    padding: 7vh;
+    padding-left: 44vh;
+    opacity: 45%;
+    text-decoration: underline;
+}

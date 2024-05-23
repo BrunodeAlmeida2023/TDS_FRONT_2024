@@ -42,16 +42,18 @@
 
 .div-one{ 
     text-align: center;
-    padding: 40vh;
-}
-
-.logo{
-    background-color: black;
+    width: 100%;
+    height: 100%;
+    background-image: url("./senai.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    opacity: 80%;
 }
 
 .feet{
     background-color: black;
-    height: 18vh;
+    height: 20vh;
 }
 
 .div-two{

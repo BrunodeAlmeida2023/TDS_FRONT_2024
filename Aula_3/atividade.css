@@ -4,7 +4,7 @@
 }
 
 .head{
-    background-color: black;
+    background-color: #0155b9;
     height: 18vh;
 }
 
@@ -36,7 +36,7 @@
 }
 
 .main{
-    background-color: steelblue;
+    background-color: #0155b9;
     height: 100vh;
 }
 
@@ -52,7 +52,7 @@
 }
 
 .feet{
-    background-color: black;
+    background-color: #0155b9;
     height: 20vh;
 }
 

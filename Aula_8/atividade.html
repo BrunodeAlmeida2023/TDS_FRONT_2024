@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <ul id="list">
+        <li id="sublist"></li>
+    </ul>
+   
+   
+</body>
+<script>
+    const Guilherme = {
+        Nome: "Guilherme",
+        Email: "GuilhermePires@gmail.com",
+        Ra: "3434343",
+        Idade: "72",
+        Cpf: "834.344.234-63",
+        aluno : {
+            nome: "Bruno",
+            Email: "Brunoalmeida@escola.pr.gov.br",
+            Ra: "323434",
+        }
+    }
+
+    var prof = [];
+    prof.push(Guilherme);
+    prof.forEach((item, index) => {
+        const lista = document.getElementById("list");
+        const h1 = document.createElement("li");
+        const { Nome } = item;
+        h1.innerHTML = `${Nome}`
+        lista.appendChild(h1);
+        
+        const li = document.getElementById("sublist");
+        const h2 = document.createElement("h2")
+
+        h2.innerHTML = `${item.aluno.nome}`
+        li.appendChild(h2); 
+    });
+</script>
+</html>

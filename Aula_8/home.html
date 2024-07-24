@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Auala8 js</title>
+</head>
+<body>
+    <script>
+        const Bruno = {
+            nome: "Bruno",
+            ra: "15734",
+        }
+
+        const Thiago = {
+            nome: "Thiago Mazaroli",
+            ra: "15523",
+        }
+
+        const Pedro = {
+            nome: "Pedro Relio",
+            ra: "56643",
+        }
+
+        const Ricardao = {
+            nome: "Ricardao do fluxo",
+            ra: "40534",
+        }
+
+        const Alunos = [Bruno, Thiago, Pedro, Ricardao]
+
+        console.log(Alunos);
+
+        var pessoas = [];
+        pessoas.push(Thiago);
+        pessoas.push(Bruno);
+        pessoas.push(Pedro);
+        pessoas.push(Ricardao)
+        
+        /*for(let index = 0; index < pessoas.length; index++){
+            console.log(alunos[index]);
+            }*/
+           
+            //Exemplo function
+           pessoas.forEach(function(item,index){
+               console.log(index, item);
+            });
+            
+            //Exemplo arrow function 
+            pessoas.forEach((item, index) => {
+            console.log(index, item);
+
+            
+        
+        });
+    </script>
+
+</body>
+</html>

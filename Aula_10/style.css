@@ -1,0 +1,62 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    padding: 8vh;
+    background-color: antiquewhite;
+}
+
+.Div-Mae {
+    border: 1vh solid black;
+    width: 71vh;
+    height: 73vh;
+    border: none;
+    border-radius: 1vh;
+    background-color: tan;
+}
+
+.div-calc {
+    text-align: center;
+}
+
+.list {
+    position: absolute;
+    left: 50%;
+}
+
+.Numbers123, .Numbers456, .Numbers789, .Func1, .Func2 {
+    display: grid;
+    padding-top: 1vh;
+    grid-template-columns: repeat(4, 30%);
+    width: 72vh;
+    height: 10vh;
+    gap: 1vh;
+}
+
+.NumbersMae {
+    padding-left: 2vh;
+}
+
+#display {
+    border: solid 3vh;
+    width: 61vh;
+    height: 5vh;
+    border-color: white;
+    font-size: 4vh;
+}
+
+button:hover {
+    background-color: beige;
+}
+
+button {
+    font-size: 5vh;
+    border: none;
+    border-radius: 1vh;
+    color: black;
+    cursor: pointer;
+}

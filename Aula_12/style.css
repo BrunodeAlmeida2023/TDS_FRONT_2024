@@ -3,15 +3,69 @@
     margin: 0;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+body {
+    background-color: #1d6ebe;
+}
+
+@keyframes slideInFromTop {
+    from {
+        transform: translateY(-50%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInFromUp {
+    from {
+        transform: translateY(30%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes colorChange {
+    0% {
+        background-color: red;
+    }
+
+    25% {
+        background-color: orange;
+    }
+
+    50% {
+        background-color: yellow;
+    }
+
+    75% {
+        background-color: green;
+    }
+
+    100% {
+        background-color: blue;
+    }
+}
+
 header {
     background-color: #5a9ddf;
     height: 11vh;
+    animation: slideInFromTop ease 1s;
 }
 
 main {
     background-color: #1d6ebe;
-    height: 90vh;
+    height: 85vh;
     position: relative;
+    animation: slideInFromUp ease 1s;
 }
 
 .Nav-bar {
@@ -20,12 +74,18 @@ main {
     gap: 2vh;
     font-size: 3vh;
     padding: 2vh;
+    font-family: 'Poppins', sans-serif;
 }
 
 .Nav-item {
     text-decoration: none;
     color: white;
     padding: 2vh;
+}
+
+.Nav-item:hover {
+    color: #1d6ebe;
+    transform: scaleX(1.1);
 }
 
 .button1 {
@@ -35,7 +95,8 @@ main {
     width: 100px;
     font: bold15px arial, sans-serif;
     text-shadow: none;
-    border-radius: 15vh;
+    border-radius: 3vh;
+    color: white;
 }
 
 .button1:hover {
@@ -55,6 +116,11 @@ main {
     background: #1d6ebe;
 }
 
+h2 {
+    animation: colorChange 4s infinite;
+    width: 30vh;
+}
+
 .img-bru {
     border-radius: 5vh;
     z-index: -1;
@@ -69,7 +135,7 @@ main {
     display: flex;
     gap: 4vh;
     position: absolute;
-    background-color: #999;
+    background-color: rgba(255, 255, 255, 0.769);
     border-radius: 2vh;
     height: 10vh;
     align-items: center;
@@ -77,18 +143,190 @@ main {
     width: 50vh;
     top: 65vh;
     left: 130vh;
-    color: wheat;
-
 }
 
-.rede-container {
-    flex-direction: column;
+.iconss {
+    text-decoration: none;
+    color: #5a9ddf;
+}
+
+.iconss:hover {
+    color: rgba(255, 255, 255, 0.769);
+    transform: scaleX(1.1);
+}
+
+.Button-Skills {
+    padding-top: 5vh;
+}
+
+.button2 {
+    background: #5a9ddf;
+    border-style: none;
+    height: 7vh;
+    width: 25vh;
+    font: bold15px arial, sans-serif;
+    text-shadow: none;
+    border-radius: 3vh;
+    color: white;
+    font-size: 3vh;
+    font-family: 'Poppins', sans-serif;
+}
+
+.button2:hover {
+    background-color: white;
+    color: #1d6ebe;
+    transition: all .50s ease;
+    letter-spacing: 1px;
+}
+
+.mobile-menu-icon {
+    display: none;
+}
+
+.mobile-menu {
+    display: none;
+}
+
+.Skills-div {
+    font-family: 'Poppins', sans-serif;
+    font-size: 3vh;
+    text-align: center;
+    padding: 15px;
+    color: rgba(255, 255, 255, 0.868);
+}
+
+.Skills-div::after {
+    content: '';
+    display: block;
+    width: 183vh;
+    height: 1vh;
+    background-color: white;
+    opacity: 50%;
+    margin: 10px auto 0;
+    border-radius: 1vh;
+    transition: width 0.3s ease-in-out;
+}
+
+.Skills-div:hover::after {
+    width: 16vh;
+}
+
+.Div-Pai {
     display: flex;
+    padding: 3vh;
+    justify-content: space-around;
 }
 
-.icon :hover {
-    border-radius: 10px;
-    background-color: #2F4F4F;
-    width: 10px;
-    height: 10px;
+.Div-Mae {
+    display: flex;
+    padding: 3vh;
+    justify-content: space-around;
+    margin-top: 3vh;
+}
+
+.Java {
+    width: 55vh;
+    height: 50vh;
+    background-color: #5a9ddf;
+    text-align: center;
+    border-radius: 2vh;
+}
+
+.img-java {
+    width: 20vh;
+}
+
+.Js {
+    width: 55vh;
+    height: 50vh;
+    background-color: #5a9ddf;
+    text-align: center;
+    border-radius: 2vh;
+}
+
+.img-js {
+    width: 22vh;
+}
+
+.C {
+    width: 55vh;
+    height: 50vh;
+    background-color: #5a9ddf;
+    text-align: center;
+    border-radius: 2vh;
+}
+
+.img-c {
+    width: 13vh;
+}
+
+.MariaDB {
+    width: 55vh;
+    height: 50vh;
+    background-color: #5a9ddf;
+    text-align: center;
+    border-radius: 2vh;
+}
+
+.img-maria {
+    width: 25vh;
+}
+
+.Html {
+    width: 55vh;
+    height: 50vh;
+    background-color: #5a9ddf;
+    text-align: center;
+    border-radius: 2vh;
+}
+
+.img-html {
+    width: 15vh;
+}
+
+.Css {
+    width: 55vh;
+    height: 50vh;
+    background-color: #5a9ddf;
+    text-align: center;
+    border-radius: 2vh;
+}
+
+.img-css {
+    width: 11vh;
+}
+
+.pe-2 {
+    width: 1974px;
+    height: 30vh;
+    background: linear-gradient(#1d6ebe, black);
+}
+
+.pe-1 {
+    padding: 20vh;
+    width: 1182px;
+    height: 30vh;
+    background: linear-gradient(#1d6ebe, black);
+}
+
+.text-ling {
+    padding: 1vh;
+    font-size: 4vh;
+    opacity: 80%;
+    color: rgba(255, 255, 255, 0.95);
+    font-family: sans-serif;
+}
+
+.copy {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    opacity: 5%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 2rem;
+    color: whitesmoke;
+    padding: 40pxa;
+    text-align: center;
+    box-sizing: border-box;
+    height: 300px;
 }
